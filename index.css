@@ -1,0 +1,41 @@
+@import url(https://db.onlinewebfonts.com/c/5a31e8d3d403b8ac139b5fc019589b00?family=Google+Sans+Text);
+@import url(https://db.onlinewebfonts.com/c/35af6dbe749b9704f03282e5a5949253?family=Rubik);
+
+body{
+    background-color: #BBC4C2;
+    justify-content: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+.top-menu p{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+}
+article p{
+    font-family: "Google-sans-text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+}
+.top-menu{
+    width: 99%;
+    height: 100px;
+    background-color: #212121;
+    border-radius: 10px;
+    box-shadow: black;
+}
+.box-1{
+    width: 15rem;
+    height: 10rem;
+    background-color: #f6eee3;
+    border-radius: 20px;
+    box-shadow: black;
+}
