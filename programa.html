@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="programa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Info - Programação</title>
 </head>
 <body>
     <header>
+        
         <div class = "top-menu">
             <div class = "top-logo">
                     <img src="java-logo.png" alt="Java Logo">
@@ -29,38 +34,36 @@
                 <p>
                     O básico das linguagens de programação. Este é um exemplo da sintaxe básica de Java, com a classe <em>Main</em>, o método <em>main</em> e a função <em>System.out.println()</em>.
                 </p>
-                <code>
-                    <div class = "code-box">
-                        <pre>public class Main {</pre>
-                        <pre>   public static void main (String[] args 0) {</pre>
-                        <pre>       System.out.println("Hello World");</pre>
-                        <pre>   }</pre>
-                        <pre>}</pre>
-                    </div>
-                </code>
+                <pre>
+                    <code class="language-java" style="padding: 10px; background-color: rgb(228, 228, 228); margin-left: 25px; margin-right: 25px; margin-bottom: 0; border-radius: 10px; overflow-x: auto; font-size: 20px; line-height: 30px;">public class Main {
+    public static void main(String[] args) {
+    System.out.println("Hello World");
+    }
+}</code>
+                </pre>
             </article>
             <article id = "Tipos-dados">
                 <h1>Tipos de Dados</h1>
                 <p>
                     Em Java, um dado precisa de uma declaração contendo o seu tipo. Cada tipo de dado tem um tamanho específico e um intervalo de valores que pode armazenar.
                 </p>
-                <code>
-                    <div class = "code-box">
-                        <pre>public class Main {</pre>
-                        <pre>   public static void main (String[] args 0) {</pre>
-                        <pre>       byte oitoBits = 127;    <em>//Inteiros de -128 a 127</em></pre>
-                        <pre>       short pequenoValor = 27748;    <em>//Inteiros de -32768 a 32767</em></pre>
-                        <pre>       int inteiro = 1;    <em>//Inteiros de -2147483648 a 2147483647</em></pre>
-                        <pre>       long longoValor = 123456789L;    <em>//Inteiros de -9223372036854775808 a 9223372036854775807</em></pre>
-                        <pre>       float flutuante = 10.5f;    <em>//Racionais com 6 a 7 dígitos decimais</em></pre>
-                        <pre>       double duploFlutuante = 12.59d;    <em>//Racionais com 15 a 16 dígitos decimais</em></pre>
-                        <pre>       char carcatere = 'A';   <em>//Caractere único ou valores ASCII</em></pre>
-                        <pre>       boolean booleano = true;    <em>//Valores booleanos (verdadeiro ou falso)</em></pre>
-                        <pre>       String texto = "Hello World";   <em>//Pedaço de texto, tipo de dado não primitivo</em></pre>
-                        <pre>   }</pre>
-                        <pre>}</pre>
-                    </div>
-                </code>
+                <div>  
+                    <pre>
+                        <code class="language-java" style="padding: 10px; background-color: rgb(228, 228, 228); margin-left: 25px; margin-right: 25px; margin-bottom: 0; border-radius: 10px; overflow-x: auto; font-size: 20px; line-height: 30px;">public class Main {
+    public static void main(String[] args) {
+        byte oitoBits = 127; // Inteiros de -128 a 127
+        short pequenoValor = 27748; // Inteiros de -32768 a 32767
+        int inteiro = 1; // Inteiros de -2147483648 a 2147483647
+        long longoValor = 123456789L; // Inteiros de -9223372036854775808 a 9223372036854775807
+        float flutuante = 10.5f; // Racionais com 6 a 7 dígitos decimais
+        double duploFlutuante = 12.59d; // Racionais com 15 a 16 dígitos decimais
+        char caractere = 'A'; // Caractere único ou valores ASCII
+        boolean booleano = true; // Valores booleanos (verdadeiro ou falso)
+        String texto = "Hello World"; // Pedaço de texto, tipo de dado não primitivo
+    }
+}</code>
+                    </pre>
+                </div>
                 <p>
                     Dos dados acima, apenas o <em>String</em> não é um tipo de dado primitivo.
                 </p>
@@ -70,17 +73,15 @@
                 <p>
                     As variáveis em Java podem ser impressas na tela utilizando a função <em>System.out.println()</em> e o símbolo '+', que concatena o conteúdo em uma única <em>String</em> impressa.
                 </p>
-                <code>
-                    <div class= "code-box">
-                        <pre>public class Main {</pre>
-                        <pre>   public static void main (String[] args 0) {</pre>
-                        <pre>       String nome = "Erick";</pre>
-                        <pre>       int idade = 34;</pre>
-                        <pre>       System.out.println("O " + nome + " tem " + idade + " anos.");</pre>
-                        <pre>   }</pre>
-                        <pre>}</pre>
-                    </div>
-                </code>
+                <pre>
+                    <code class="language-java" style="padding: 10px; background-color: rgb(228, 228, 228); margin-left: 25px; margin-right: 25px; margin-bottom: 0; border-radius: 10px; overflow-x: auto; font-size: 20px; line-height: 30px;">public class Main {
+    public static void main(String[] args) {
+        String nome = "Erick";
+        int idade = 34;
+        System.out.println("O " + nome + " tem " + idade + " anos.");
+    }
+}</code>
+                </pre>
                 <p>Output: "O Erick tem 34 anos."</p>
             </article>
         </section>
