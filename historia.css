@@ -55,7 +55,7 @@ header{
 .top-links a:link,:visited{
     color: inherit;
 }
-article{
+section{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,7 +64,7 @@ article{
     margin: 30px;
     gap: 30px;
 }
-.box{
+article{
     width: 85%;
     height: 20%;
     background-color: #f6eee3;
