@@ -54,6 +54,7 @@ header{
     margin: 4px;
     line-height: 2;
     user-select: none;
+    transition: 100ms;
 }
 .top-links a:hover{
     font-size: 26px;

@@ -2,7 +2,9 @@
 @import url(https://db.onlinewebfonts.com/c/35af6dbe749b9704f03282e5a5949253?family=Rubik);
 @import url(https://db.onlinewebfonts.com/c/ae7951c47ee13ee1f50d9cde9da242ee?family=Google+Sans);
 @import url(https://db.onlinewebfonts.com/c/7fd45b9b66da92e6198e0732294d5708?family=Quattrocento+Sans+Bold); 
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #C7CED6;
     justify-content: center;
@@ -54,6 +56,7 @@ header{
     margin: 4px;
     line-height: 2;
     user-select: none;
+    transition: 100ms;
 }
 .top-links a:hover{
     font-size: 26px;
@@ -150,6 +153,7 @@ aside li{
     font-size: 20px;
     line-height: 1.4;
     text-decoration: none;
+    transition: 100ms;
 }
 aside li:hover{
     font-size: 23px;
@@ -166,6 +170,7 @@ aside li:hover{
     border-radius: 15px;
     line-height: 0.6;
     overflow: auto;
+    transition: 100ms;
 }
 code :hover{
     font-size: 16px;
