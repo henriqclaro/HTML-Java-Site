@@ -32,70 +32,188 @@
                 <code>
                     <div class = "code-box">
                         <pre>public class Main {</pre>
-                        <pre>   public static void main (String[] args 0) {</pre>
+                        <pre>   public static void main (String[] args) {</pre>
                         <pre>       System.out.println("Hello World");</pre>
                         <pre>   }</pre>
                         <pre>}</pre>
                     </div>
                 </code>
+                <p><ins>Output:</ins><br>> Hello World</p>
             </article>
-            <article id = "Tipos-dados">
+            <article id = "tipos-dados">
                 <h1>Tipos de Dados</h1>
                 <p>
                     Em Java, um dado precisa de uma declaração contendo o seu tipo. Cada tipo de dado tem um tamanho específico e um intervalo de valores que pode armazenar.
                 </p>
                 <code>
                     <div class = "code-box">
-                        <pre>public class Main {</pre>
-                        <pre>   public static void main (String[] args 0) {</pre>
-                        <pre>       byte oitoBits = 127;    <em>//Inteiros de -128 a 127</em></pre>
-                        <pre>       short pequenoValor = 27748;    <em>//Inteiros de -32768 a 32767</em></pre>
-                        <pre>       int inteiro = 1;    <em>//Inteiros de -2147483648 a 2147483647</em></pre>
-                        <pre>       long longoValor = 123456789L;    <em>//Inteiros de -9223372036854775808 a 9223372036854775807</em></pre>
-                        <pre>       float flutuante = 10.5f;    <em>//Racionais com 6 a 7 dígitos decimais</em></pre>
-                        <pre>       double duploFlutuante = 12.59d;    <em>//Racionais com 15 a 16 dígitos decimais</em></pre>
-                        <pre>       char carcatere = 'A';   <em>//Caractere único ou valores ASCII</em></pre>
-                        <pre>       boolean booleano = true;    <em>//Valores booleanos (verdadeiro ou falso)</em></pre>
-                        <pre>       String texto = "Hello World";   <em>//Pedaço de texto, tipo de dado não primitivo</em></pre>
-                        <pre>   }</pre>
-                        <pre>}</pre>
+                        <pre>byte oitoBits = 127;    <em>//Inteiros de -128 a 127</em></pre>
+                        <pre>short pequenoValor = 27748;    <em>//Inteiros de -32768 a 32767</em></pre>
+                        <pre>int inteiro = 1;    <em>//Inteiros de -2147483648 a 2147483647</em></pre>
+                        <pre>long longoValor = 123456789L;    <em>//Inteiros de -9223372036854775808 a 9223372036854775807</em></pre>
+                        <pre>float flutuante = 10.5f;    <em>//Racionais com 6 a 7 dígitos decimais</em></pre>
+                        <pre>double duploFlutuante = 12.59d;    <em>//Racionais com 15 a 16 dígitos decimais</em></pre>
+                        <pre>char caractere = 'A';   <em>//Caractere único ou valores Unicode</em></pre>
+                        <pre>boolean booleano = true;    <em>//Valores booleanos (verdadeiro ou falso)</em></pre>
+                        <pre>String texto = "Hello World";   <em>//Pedaço de texto, tipo de dado não primitivo</em></pre>
                     </div>
                 </code>
                 <p>
-                    Dos dados acima, apenas o <em>String</em> não é um tipo de dado primitivo.
+                    Dos dados acima, apenas o String não é um tipo de dado primitivo.
                 </p>
             </article>
             <article id = "variaveis">
                 <h1>Impressão de Variáveis</h1>
                 <p>
-                    As variáveis em Java podem ser impressas na tela utilizando a função <em>System.out.println()</em> e o símbolo '+', que concatena o conteúdo em uma única <em>String</em> impressa.
+                    As variáveis em Java podem ser impressas na tela utilizando a função <em>System.out.println()</em> e o símbolo '+', que concatena o conteúdo em uma única String impressa.
                 </p>
                 <code>
                     <div class= "code-box">
-                        <pre>public class Main {</pre>
-                        <pre>   public static void main (String[] args 0) {</pre>
-                        <pre>       String nome = "Erick";</pre>
-                        <pre>       int idade = 34;</pre>
-                        <pre>       System.out.println("O " + nome + " tem " + idade + " anos.");</pre>
-                        <pre>   }</pre>
+                        <pre>String nome = "Erick";</pre>
+                        <pre>int idade = 34;</pre>
+                        <pre>System.out.println("O " + nome + " tem " + idade + " anos.");</pre>
+                        <pre>System.out.printf("O %s tem %d anos.\n", nome, idade);  <em>//Impressão formatada</em></pre>
+                    </div>
+                </code>
+                <p><ins>Output:</ins><br>> O Erick tem 34 anos.<br>> O Erick tem 34 anos.</p>
+            </article>
+            <article id = "string">
+                <h1>Métodos String</h1>
+                <p>Em Java, o tipo String pode ser manipulado com alguns métodos específicos.<br></p>
+                <p><br>O método <em>length()</em> retorna o número de caracteres de uma String.<br></p>
+                <code>
+                    <div class= "code-box">
+                        <pre>String nome = "Erick";</pre>
+                        <pre>System.out.println(nome.length());</pre>
+                    </div>
+                </code>
+                <p><ins>Output:</ins><br>> 5</p>
+                <p>
+                    <br>O método <em>charAt()</em> retorna o caractere de uma String na posição especificada.<br>
+                    O primeiro caractere de uma String é o índice 0, o segundo é o índice 1 e assim por diante.<br>
+                    O último caractere de uma String é o índice <em>length() - 1</em>.<br>
+                </p>
+                <code>
+                    <div class= "code-box">
+                        <pre>String nome = "Erick";</pre>
+                        <pre>System.out.println(nome.charAt(0));</pre>
+                    </div>
+                </code>
+                <p><ins>Output:</ins><br>> E</p>
+                <p>
+                    <br>O método <em>toUpperCase()</em> retorna uma String em letras maiúsculas.<br>
+                    O método <em>toLowerCase()</em> retorna uma String em letras minúsculas.<br>
+                    O método <em>trim()</em> remove os espaços em branco no início e no final de uma String.<br>
+                </p>
+                <code>
+                    <div class= "code-box">
+                        <pre>String nome = "   Erick   ";</pre>
+                        <pre>System.out.println(nome.trim().toUpperCase());</pre>
+                        <pre>System.out.println(nome.trim().toLowerCase());</pre>
+                        <pre>System.out.println(nome.trim());</pre>
+                    </div>
+                </code>
+                <p><ins>Output:</ins><br>> ERICK<br>> erick<br>> Erick</p>
+                <p>
+                    <br>O método <em>replace()</em> substitui um caractere por outro em uma String.<br>
+                    O método <em>substring()</em> retorna uma parte de uma String, especificando o índice inicial (inclusivo) e o índice final (exclusivo).<br>
+                    O método <em>indexOf()</em> retorna o índice da primeira ocorrência de um caractere em uma String.<br>
+                </p>
+                <code>
+                    <div class= "code-box">
+                        <pre>String nome = "Erick";</pre>
+                        <pre>System.out.println(nome.replace("E", "e"));</pre>
+                        <pre>System.out.println(nome.substring(1, 3));</pre>
+                        <pre>System.out.println(nome.indexOf("i"));</pre>
+                    </div>
+                </code>
+                <p><ins>Output:</ins><br>> erick<br>> ri<br>> 2</p>
+                <p>
+                    <br>O método <em>equals()</em> compara duas Strings.<br>
+                    O método <em>equalsIgnoreCase()</em> compara duas Strings, ignorando maiúsculas e minúsculas.<br>
+                </p>
+                <code>
+                    <div class= "code-box">
+                        <pre>String nome1 = "Erick";</pre>
+                        <pre>String nome2 = "erick";</pre>
+                        <pre>System.out.println(nome1.equals(nome2));</pre>
+                        <pre>System.out.println(nome1.equalsIgnoreCase(nome2));</pre>
+                    </div>
+                </code>
+                <p><ins>Output:</ins><br>> false<br>> true</p>
+            </article>
+            <article id = "loops">
+                <h1>Laços de Repetição</h1>
+                <p>
+                    Os loops são estruturas de repetição que permitem executar um bloco de código várias vezes.<br>
+                    Existem três tipos principais de loops em Java: <em>for</em>, <em>while</em> e <em>do while</em>.
+                </p>
+                <p><br>O loop <em>for</em> é usado quando o número de iterações é conhecido.<br></p>
+                <code>
+                    <div class= "code-box">
+                        <pre>for (int i = 0; i &lt; 5; i++) {</pre>
+                        <pre>   System.out.println(i);</pre>
                         <pre>}</pre>
                     </div>
                 </code>
-                <p>Output: "O Erick tem 34 anos."</p>
+                <p><ins>Output:</ins><br>> 0<br>> 1<br>> 2<br>> 3<br>> 4</p>
+                <p>
+                    <br>O loop <em>while</em> é usado quando o número de iterações não é conhecido.<br>
+                    O loop continua enquanto a condição for verdadeira.<br>
+                    O loop <em>do while</em> é semelhante ao <em>while</em>, mas garante que o bloco de código seja executado pelo menos uma vez.<br>
+                </p>
+                <code>
+                    <div class= "code-box">
+                        <pre>int i = 0;</pre>
+                        <pre>while (i &lt; 5) {</pre>
+                        <pre>   System.out.println(i);</pre>
+                        <pre>   i++;</pre>
+                        <pre>}</pre>
+                    </div>
+                </code>
+                <p><ins>Output:</ins><br>> 0<br>> 1<br>> 2<br>> 3<br>> 4</p>
+                <p>
+                    <br>O loop <em>for each</em> é usado para iterar sobre elementos de uma coleção, como arrays ou listas.<br>
+                    Ele é útil quando você não precisa do índice do elemento.<br>
+                </p>
+                <code>
+                    <div class= "code-box">
+                        <pre>String[] nomes = {"Erick", "João", "Heitor"};</pre>
+                        <pre>for (String nome : nomes) {</pre>
+                        <pre>   System.out.println(nome);</pre>
+                        <pre>}</pre>
+                    </div>
+                </code>
+                <p><ins>Output:</ins><br>> Erick<br>> João<br>> Heitor</p>
+                <p>
+                    <br> Os comandos <em>break</em> e <em>continue</em> são usados para controlar o fluxo dos loops.<br>
+                    O comando <em>break</em> encerra o loop imediatamente.<br>
+                    O comando <em>continue</em> pula a iteração atual e continua com a próxima.<br>
+                </p>
+                <code>
+                    <div class= "code-box">
+                        <pre>for (int i = 0; i &lt; 5; i++) {</pre>
+                        <pre>   if (i == 4) {</pre>
+                        <pre>       break;</pre>
+                        <pre>   }</pre>
+                        <pre>   if (i == 2) {</pre>
+                        <pre>       continue;</pre>
+                        <pre>   }</pre>
+                        <pre>   System.out.println(i);</pre>
+                        <pre>}</pre>
+                    </div>
+                </code>
+                <p><ins>Output:</ins><br>> 0<br>> 1<br>> 3</p>
             </article>
         </section>
-        <aside class = "sidebar">
+        <aside>
             <nav>
                 <ul>
                     <li><a href="#hello-world">Hello World</a></li>
                     <li><a href="#tipos-dados">Tipos de Dados</a></li>
                     <li><a href="#variaveis">Variáveis</a></li>
-                    <li><a href="#">Classe</a></li>
-                    <li><a href="#">Classe</a></li>
-                    <li><a href="#">Classe</a></li>
-                    <li><a href="#">Classe</a></li>
-                    <li><a href="#">Classe</a></li>
-                    <li><a href="#">Classe</a></li>
+                    <li><a href="#string">Métodos String</a></li>
+                    <li><a href="#loops">Laços de Repetição</a></li>
                 </ul>
             </nav>
         </aside>
