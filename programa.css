@@ -22,8 +22,6 @@ header {
     font-family: "Quattrocento Sans Bold", sans-serif;
     font-size: 40px;
     font-weight: 400;
-    font-style: normal;
-    font-optical-sizing: auto;
     color: white;
     margin: 25px;
 }
@@ -54,9 +52,6 @@ header {
 .top-links a {
     font-family: "Rubik", sans-serif;
     font-size: 23px;
-    font-weight: 400;
-    font-style: normal;
-    font-optical-sizing: auto;
     line-height: 2;
     color: white;
     text-decoration: none;
@@ -99,13 +94,13 @@ main {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    width: 100%;
+    width: fit-content;
     margin: 30px;
 }
 
 article {
     width: 100%;
-    height: 20%;
+    height: 100%;
     background-color: #f6eee3;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #21212166;
@@ -117,7 +112,6 @@ article h2 {
     font-family: "Google Sans", sans-serif;
     font-size: 24px;
     font-weight: 200;
-    font-style: normal;
     color: black;
     background-color: #e47c4c;
     padding: 15px;
@@ -129,8 +123,6 @@ article h2 {
 article p {
     font-family: "Google Sans Text", sans-serif;
     font-size: 20px;
-    font-weight: 200;
-    font-style: normal;
     color: black;
     padding: 5px 25px;
     margin: 1px 0;
@@ -162,11 +154,11 @@ article p {
 aside {
     flex: 1;
     position: sticky;
-    top: 90px;
+    top: 10%;
     margin: 30px;
-    min-width: 84px;
-    max-width: 288px;
-    height: 78dvh;
+    min-width: fit-content;
+    max-width: 300px;
+    height: 100%;
     padding-bottom: 30px;
     overflow: auto;
     background-color: #f6eee3;
@@ -189,6 +181,7 @@ aside ul {
     flex-direction: column;
     justify-content: space-around;
     height: 74dvh;
+    padding-right: 40px;
     user-select: none;
 }
 
@@ -202,4 +195,30 @@ aside li {
 
 aside li:hover {
     font-size: 23px;
+}
+
+@media (max-width: 1150px) {
+    .content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    aside {
+        position: relative;
+        min-width: 95%;
+        padding-bottom: 0;
+    }
+
+    aside ul {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    aside li {
+        text-align: center;
+    }
+
+    aside a {
+        padding: 0 10px;
+    }
 }
