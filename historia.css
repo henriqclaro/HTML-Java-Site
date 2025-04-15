@@ -13,12 +13,13 @@ header {
     justify-content: center;
 }
 
+/*Cabeçalho*/
 .top-menu h1 {
     font-family: "Quattrocento Sans Bold", sans-serif;
-    font-optical-sizing: auto;
+    font-size: 40px;
     font-weight: 400;
     font-style: normal;
-    font-size: 40px;
+    font-optical-sizing: auto;
     color: white;
     margin: 25px;
 }
@@ -34,31 +35,31 @@ header {
 }
 
 .top-menu {
-    width: 99%;
-    height: 100px;
-    background-color: #212121;
-    border-radius: 10px;
-    box-shadow: 0px 10px 25px rgba(33, 33, 33, 0.4);
-    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 99%;
+    height: 100px;
+    padding: 10px;
+    background-color: #212121;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px #21212166;
     overflow: auto;
 }
 
 .top-links a {
-    padding: 5px;
-    border: 2px ridge;
-    border-radius: 5px;
     font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
+    font-size: 23px;
     font-weight: 400;
     font-style: normal;
-    font-size: 23px;
+    font-optical-sizing: auto;
+    line-height: 2;
     color: white;
     text-decoration: none;
+    padding: 5px;
     margin: 4px;
-    line-height: 2;
+    border: 2px ridge;
+    border-radius: 5px;
     user-select: none;
     transition: 125ms;
 }
@@ -79,14 +80,15 @@ header {
     color: inherit;
 }
 
+/*Conteúdo*/
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 98%;
-    margin: 30px;
+    justify-content: center;
     gap: 30px;
+    width: 100;
+    margin: 30px;
 }
 
 article {
@@ -100,7 +102,6 @@ article {
 
 article h2 {
     font-family: "Google Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
     font-size: 24px;
@@ -114,30 +115,28 @@ article h2 {
 
 article h3 {
     font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
+    font-size: 23px;
     font-weight: 200;
     font-style: normal;
-    font-size: 23px;
+    font-optical-sizing: auto;
     color: black;
-    padding-top: 10px;
     padding-left: 25px;
+    padding-top: 10px;
     margin-bottom: 10px;
 }
 
 article p {
     font-family: "Google Sans Text", sans-serif;
-    font-optical-sizing: auto;
+    font-size: 20px;
     font-weight: 200;
     font-style: normal;
-    font-size: 20px;
+    font-optical-sizing: auto;
     color: black;
-    padding: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 1px;
-    margin-bottom: 1px;
+    padding: 5px 25px;
+    margin: 1px 0;
 }
 
+/*Tabela de Versões*/
 .box-table {
     display: flex;
     justify-content: center;
@@ -145,11 +144,11 @@ article p {
 
 table {
     font-family: monospace, sans-serif;
-    font-size: 60px;
-    width: 60%;
-    border-collapse: collapse;
-    margin: 20px;
     font-size: 22px;
+    width: 60%;
+    margin: 20px auto;
     text-align: center;
-    align-content: center;
+    border-collapse: collapse;
+    border-spacing: 4px;
+    padding: 6px;
 }

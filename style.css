@@ -13,12 +13,13 @@ header {
     justify-content: center;
 }
 
+/*Cabeçalho*/
 .top-menu h1 {
     font-family: "Quattrocento Sans Bold", sans-serif;
-    font-optical-sizing: auto;
+    font-size: 40px;
     font-weight: 400;
     font-style: normal;
-    font-size: 40px;
+    font-optical-sizing: auto;
     color: white;
     margin: 25px;
 }
@@ -34,31 +35,31 @@ header {
 }
 
 .top-menu {
-    width: 99%;
-    height: 100px;
-    background-color: #212121;
-    border-radius: 10px;
-    box-shadow: 0px 10px 25px rgba(33, 33, 33, 0.4);
-    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 99%;
+    height: 100px;
+    padding: 10px;
+    background-color: #212121;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px #21212166;
     overflow: auto;
 }
 
 .top-links a {
-    padding: 5px;
-    border: 2px ridge;
-    border-radius: 5px;
     font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
+    font-size: 23px;
     font-weight: 400;
     font-style: normal;
-    font-size: 23px;
+    font-optical-sizing: auto;
+    line-height: 2;
     color: white;
     text-decoration: none;
+    padding: 5px;
     margin: 4px;
-    line-height: 2;
+    border: 2px ridge;
+    border-radius: 5px;
     user-select: none;
     transition: 125ms;
 }
@@ -79,16 +80,19 @@ header {
     color: inherit;
 }
 
+/*Conteúdo*/
 .content {
-    margin: 30px;
-    gap: 30px;
     display: flex;
+    gap: 30px;
+    margin: 30px;
     max-height: 100dvh;
 }
 
 main {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
     height: 100%;
     gap: 30px;
 }
@@ -100,9 +104,9 @@ main {
 }
 
 article {
+    background-color: #f6eee3;
     width: 100%;
     min-height: 100%;
-    background-color: #f6eee3;
     border-radius: 20px;
     box-shadow: 0px 10px 25px rgba(33, 33, 33, 0.4);
     padding-bottom: 30px;
@@ -110,28 +114,16 @@ article {
 
 article h2 {
     font-family: "Google Sans", sans-serif;
-    font-optical-sizing: auto;
+    font-size: 24px;
     font-weight: 200;
     font-style: normal;
-    font-size: 24px;
+    font-optical-sizing: auto;
     color: black;
+    background-color: #e47c4c;
     padding: 15px;
     margin-top: 0;
-    background-color: rgb(228, 124, 76);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-}
-
-article h3 {
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 23px;
-    color: black;
-    padding-top: 10px;
-    padding-left: 25px;
-    margin-bottom: 10px;
 }
 
 article p {
@@ -146,13 +138,14 @@ article p {
     margin-bottom: 1px;
 }
 
+/*Mural Lateral*/
 aside {
     max-width: 300px;
     max-height: 100vh;
-    font-family: "Google Sans Text", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 20px;
     background-color: #f6eee3;
+    font-family: "Google Sans Text", sans-serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
     border-radius: 20px;
     box-shadow: 0px 10px 25px rgba(33, 33, 33, 0.4);
     padding-bottom: 30px;
@@ -161,14 +154,14 @@ aside {
 
 aside h2 {
     font-family: "Google Sans", sans-serif;
-    font-optical-sizing: auto;
+    font-size: 24px;
     font-weight: 200;
     font-style: normal;
-    font-size: 24px;
+    font-optical-sizing: auto;
     color: black;
+    background-color: #e47c4c;
     padding: 15px;
     margin-top: 0;
-    background-color: rgb(228, 124, 76);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     position: sticky;
@@ -179,9 +172,10 @@ aside h2 {
 aside figure {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
     text-align: center;
+    margin-bottom: 60px;
 }
 
 aside img {

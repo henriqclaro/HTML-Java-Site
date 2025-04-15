@@ -9,12 +9,15 @@
 </head>
 
 <body>
+    <!--Cabeçalho-->
     <header>
         <div class="top-menu">
+
             <div class="top-logo">
                 <img src="java-logo.png" alt="Java Logo">
                 <h1>Java Info</h1>
             </div>
+
             <nav>
                 <div class="top-links">
                     <a href="https://www.java.com/pt-BR/">Site Oficial Java</a>
@@ -23,16 +26,22 @@
                     <a href="programa.html"><ins>Programação</ins></a>
                 </div>
             </nav>
+
         </div>
     </header>
+
+    <!--Conteúdo da Página-->
     <div class="content">
         <main>
+
             <article id="hello-world">
                 <h2>Hello World</h2>
+
                 <p>
                     O básico das linguagens de programação. Este é um exemplo da sintaxe básica de Java, com a classe
                     <em>Main</em>, o método <em>main</em> e a função <em>System.out.println()</em>.
                 </p>
+
                 <code>
                     <div class = "code-box">
                         <pre>public class Main {</pre>
@@ -43,13 +52,17 @@
                     </div>
                 </code>
                 <p><ins>Output:</ins><br>> Hello World</p>
+
             </article>
+
             <article id="tipos-dados">
                 <h2>Tipos de Dados</h2>
+
                 <p>
                     Em Java, um dado precisa de uma declaração contendo o seu tipo. Cada tipo de dado tem um tamanho
                     específico e um intervalo de valores que pode armazenar.
                 </p>
+
                 <code>
                     <div class = "code-box">
                         <pre>byte oitoBits = 127;    <em>//Inteiros de -128 a 127</em></pre>
@@ -63,17 +76,19 @@
                         <pre>String texto = "Hello World";   <em>//Pedaço de texto, tipo de dado não primitivo</em></pre>
                     </div>
                 </code>
-                <p>
-                    Dos dados acima, apenas String é um tipo de dado não primitivo.
-                </p>
+                <p>Dos dados acima, apenas String é um tipo de dado não primitivo.</p>
+
             </article>
+
             <article id="variaveis">
                 <h2>Impressão de Variáveis</h2>
+
                 <p>
                     As variáveis em Java podem ser impressas na tela utilizando a função <em>System.out.println()</em> e
                     o
                     símbolo '+', que concatena o conteúdo em uma única String impressa.
                 </p>
+
                 <code>
                     <div class= "code-box">
                         <pre>String nome = "Erick";</pre>
@@ -83,11 +98,14 @@
                     </div>
                 </code>
                 <p><ins>Output:</ins><br>> O Erick tem 34 anos.<br>> O Erick tem 34 anos.</p>
+
             </article>
+
             <article id="string">
                 <h2>Métodos String</h2>
                 <p>Em Java, o tipo String pode ser manipulado com alguns métodos específicos.<br></p>
                 <p><br>O método <em>length()</em> retorna o número de caracteres de uma String.<br></p>
+
                 <code>
                     <div class= "code-box">
                         <pre>String nome = "Erick";</pre>
@@ -95,11 +113,13 @@
                     </div>
                 </code>
                 <p><ins>Output:</ins><br>> 5</p>
+
                 <p>
                     <br>O método <em>charAt()</em> retorna o caractere de uma String na posição especificada.<br>
                     O primeiro caractere de uma String é o índice 0, o segundo é o índice 1 e assim por diante.<br>
                     O último caractere de uma String é o índice <em>length() - 1</em>.<br>
                 </p>
+
                 <code>
                     <div class= "code-box">
                         <pre>String nome = "Erick";</pre>
@@ -107,11 +127,13 @@
                     </div>
                 </code>
                 <p><ins>Output:</ins><br>> E</p>
+
                 <p>
                     <br>O método <em>toUpperCase()</em> retorna uma String em letras maiúsculas.<br>
                     O método <em>toLowerCase()</em> retorna uma String em letras minúsculas.<br>
                     O método <em>trim()</em> remove os espaços em branco no início e no final de uma String.<br>
                 </p>
+
                 <code>
                     <div class= "code-box">
                         <pre>String nome = "   Erick   ";</pre>
@@ -121,6 +143,7 @@
                     </div>
                 </code>
                 <p><ins>Output:</ins><br>> ERICK<br>> erick<br>> Erick</p>
+
                 <p>
                     <br>O método <em>replace()</em> substitui um caractere por outro em uma String.<br>
                     O método <em>substring()</em> retorna uma parte de uma String, especificando o índice inicial
@@ -128,6 +151,7 @@
                     O método <em>indexOf()</em> retorna o índice da primeira ocorrência de um caractere em uma
                     String.<br>
                 </p>
+
                 <code>
                     <div class= "code-box">
                         <pre>String nome = "Erick";</pre>
@@ -137,10 +161,12 @@
                     </div>
                 </code>
                 <p><ins>Output:</ins><br>> erick<br>> ri<br>> 2</p>
+
                 <p>
                     <br>O método <em>equals()</em> compara duas Strings.<br>
                     O método <em>equalsIgnoreCase()</em> compara duas Strings, ignorando maiúsculas e minúsculas.<br>
                 </p>
+
                 <code>
                     <div class= "code-box">
                         <pre>String nome1 = "Erick";</pre>
@@ -150,14 +176,18 @@
                     </div>
                 </code>
                 <p><ins>Output:</ins><br>> false<br>> true</p>
+
             </article>
+
             <article id="loops">
                 <h2>Laços de Repetição</h2>
+
                 <p>
                     Os loops são estruturas de repetição que permitem executar um bloco de código várias vezes.<br>
                     Existem três tipos principais de loops em Java: <em>for</em>, <em>while</em> e <em>do while</em>.
                 </p>
                 <p><br>O loop <em>for</em> é usado quando o número de iterações é conhecido.<br></p>
+
                 <code>
                     <div class= "code-box">
                         <pre>for (int i = 0; i &lt; 5; i++) {</pre>
@@ -166,12 +196,14 @@
                     </div>
                 </code>
                 <p><ins>Output:</ins><br>> 0<br>> 1<br>> 2<br>> 3<br>> 4</p>
+
                 <p>
                     <br>O loop <em>while</em> é usado quando o número de iterações não é conhecido.<br>
                     O loop continua enquanto a condição for verdadeira.<br>
                     O loop <em>do while</em> é semelhante ao <em>while</em>, mas garante que o bloco de código seja
                     executado pelo menos uma vez.<br>
                 </p>
+
                 <code>
                     <div class= "code-box">
                         <pre>int i = 0;</pre>
@@ -182,10 +214,12 @@
                     </div>
                 </code>
                 <p><ins>Output:</ins><br>> 0<br>> 1<br>> 2<br>> 3<br>> 4</p>
+
                 <p>
                     <br>O loop <em>for each</em> é usado para iterar sobre elementos de uma coleção, como arrays.<br>
                     Ele é útil quando você não precisa do índice do elemento.<br>
                 </p>
+
                 <code>
                     <div class= "code-box">
                         <pre>String[] nomes = {"Erick", "João", "Heitor"};</pre>
@@ -195,11 +229,13 @@
                     </div>
                 </code>
                 <p><ins>Output:</ins><br>> Erick<br>> João<br>> Heitor</p>
+
                 <p>
                     <br> Os comandos <em>break</em> e <em>continue</em> são usados para controlar o fluxo dos loops.<br>
                     O comando <em>break</em> encerra o loop imediatamente.<br>
                     O comando <em>continue</em> pula a iteração atual e continua com a próxima.<br>
                 </p>
+
                 <code>
                     <div class= "code-box">
                         <pre>for (int i = 0; i &lt; 5; i++) {</pre>
@@ -214,8 +250,12 @@
                     </div>
                 </code>
                 <p><ins>Output:</ins><br>> 0<br>> 1<br>> 3</p>
+
             </article>
+
         </main>
+
+        <!--Menu de navegação lateral-->
         <aside>
             <nav>
                 <ul>
@@ -227,5 +267,7 @@
                 </ul>
             </nav>
         </aside>
+
     </div>
+
 </body>
