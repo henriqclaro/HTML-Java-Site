@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="programa.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Info - Programação</title>
 </head>
+
 <body>
     <header>
-        <div class = "top-menu">
-            <div class = "top-logo">
-                    <img src="java-logo.png" alt="Java Logo">
+        <div class="top-menu">
+            <div class="top-logo">
+                <img src="java-logo.png" alt="Java Logo">
                 <h1>Java Info</h1>
             </div>
             <nav>
-                <div class = "top-links">
+                <div class="top-links">
                     <a href="https://www.java.com/pt-BR/">Site Oficial Java</a>
                     <a href="index.html">Página Inicial</a>
                     <a href="historia.html">História</a>
@@ -23,12 +25,13 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section>
-            <article id = "hello-world">
-                <h1>Hello World</h1>
+    <div class="content">
+        <main>
+            <article id="hello-world">
+                <h2>Hello World</h2>
                 <p>
-                    O básico das linguagens de programação. Este é um exemplo da sintaxe básica de Java, com a classe <em>Main</em>, o método <em>main</em> e a função <em>System.out.println()</em>.
+                    O básico das linguagens de programação. Este é um exemplo da sintaxe básica de Java, com a classe
+                    <em>Main</em>, o método <em>main</em> e a função <em>System.out.println()</em>.
                 </p>
                 <code>
                     <div class = "code-box">
@@ -41,10 +44,11 @@
                 </code>
                 <p><ins>Output:</ins><br>> Hello World</p>
             </article>
-            <article id = "tipos-dados">
-                <h1>Tipos de Dados</h1>
+            <article id="tipos-dados">
+                <h2>Tipos de Dados</h2>
                 <p>
-                    Em Java, um dado precisa de uma declaração contendo o seu tipo. Cada tipo de dado tem um tamanho específico e um intervalo de valores que pode armazenar.
+                    Em Java, um dado precisa de uma declaração contendo o seu tipo. Cada tipo de dado tem um tamanho
+                    específico e um intervalo de valores que pode armazenar.
                 </p>
                 <code>
                     <div class = "code-box">
@@ -63,10 +67,12 @@
                     Dos dados acima, apenas String é um tipo de dado não primitivo.
                 </p>
             </article>
-            <article id = "variaveis">
-                <h1>Impressão de Variáveis</h1>
+            <article id="variaveis">
+                <h2>Impressão de Variáveis</h2>
                 <p>
-                    As variáveis em Java podem ser impressas na tela utilizando a função <em>System.out.println()</em> e o símbolo '+', que concatena o conteúdo em uma única String impressa.
+                    As variáveis em Java podem ser impressas na tela utilizando a função <em>System.out.println()</em> e
+                    o
+                    símbolo '+', que concatena o conteúdo em uma única String impressa.
                 </p>
                 <code>
                     <div class= "code-box">
@@ -78,8 +84,8 @@
                 </code>
                 <p><ins>Output:</ins><br>> O Erick tem 34 anos.<br>> O Erick tem 34 anos.</p>
             </article>
-            <article id = "string">
-                <h1>Métodos String</h1>
+            <article id="string">
+                <h2>Métodos String</h2>
                 <p>Em Java, o tipo String pode ser manipulado com alguns métodos específicos.<br></p>
                 <p><br>O método <em>length()</em> retorna o número de caracteres de uma String.<br></p>
                 <code>
@@ -117,8 +123,10 @@
                 <p><ins>Output:</ins><br>> ERICK<br>> erick<br>> Erick</p>
                 <p>
                     <br>O método <em>replace()</em> substitui um caractere por outro em uma String.<br>
-                    O método <em>substring()</em> retorna uma parte de uma String, especificando o índice inicial (inclusivo) e o índice final (exclusivo).<br>
-                    O método <em>indexOf()</em> retorna o índice da primeira ocorrência de um caractere em uma String.<br>
+                    O método <em>substring()</em> retorna uma parte de uma String, especificando o índice inicial
+                    (inclusivo) e o índice final (exclusivo).<br>
+                    O método <em>indexOf()</em> retorna o índice da primeira ocorrência de um caractere em uma
+                    String.<br>
                 </p>
                 <code>
                     <div class= "code-box">
@@ -143,8 +151,8 @@
                 </code>
                 <p><ins>Output:</ins><br>> false<br>> true</p>
             </article>
-            <article id = "loops">
-                <h1>Laços de Repetição</h1>
+            <article id="loops">
+                <h2>Laços de Repetição</h2>
                 <p>
                     Os loops são estruturas de repetição que permitem executar um bloco de código várias vezes.<br>
                     Existem três tipos principais de loops em Java: <em>for</em>, <em>while</em> e <em>do while</em>.
@@ -161,7 +169,8 @@
                 <p>
                     <br>O loop <em>while</em> é usado quando o número de iterações não é conhecido.<br>
                     O loop continua enquanto a condição for verdadeira.<br>
-                    O loop <em>do while</em> é semelhante ao <em>while</em>, mas garante que o bloco de código seja executado pelo menos uma vez.<br>
+                    O loop <em>do while</em> é semelhante ao <em>while</em>, mas garante que o bloco de código seja
+                    executado pelo menos uma vez.<br>
                 </p>
                 <code>
                     <div class= "code-box">
@@ -206,7 +215,7 @@
                 </code>
                 <p><ins>Output:</ins><br>> 0<br>> 1<br>> 3</p>
             </article>
-        </section>
+        </main>
         <aside>
             <nav>
                 <ul>
@@ -218,5 +227,5 @@
                 </ul>
             </nav>
         </aside>
-    </main>
+    </div>
 </body>

@@ -1,17 +1,19 @@
 @import url(https://db.onlinewebfonts.com/c/5a31e8d3d403b8ac139b5fc019589b00?family=Google+Sans+Text);
 @import url(https://db.onlinewebfonts.com/c/35af6dbe749b9704f03282e5a5949253?family=Rubik);
 @import url(https://db.onlinewebfonts.com/c/ae7951c47ee13ee1f50d9cde9da242ee?family=Google+Sans);
-@import url(https://db.onlinewebfonts.com/c/7fd45b9b66da92e6198e0732294d5708?family=Quattrocento+Sans+Bold); 
+@import url(https://db.onlinewebfonts.com/c/7fd45b9b66da92e6198e0732294d5708?family=Quattrocento+Sans+Bold);
 
-body{
+body {
     background-color: #C7CED6;
     justify-content: center;
 }
-header{
+
+header {
     display: flex;
     justify-content: center;
 }
-.top-menu h1{
+
+.top-menu h1 {
     font-family: "Quattrocento Sans Bold", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -20,15 +22,18 @@ header{
     color: white;
     margin: 25px;
 }
-.top-logo{
+
+.top-logo {
     display: flex;
     justify-content: flex-start;
 }
-.top-logo img{
+
+.top-logo img {
     width: 60px;
     height: 90px;
 }
-.top-menu{
+
+.top-menu {
     width: 99%;
     height: 100px;
     background-color: #212121;
@@ -40,7 +45,8 @@ header{
     align-items: center;
     overflow: auto;
 }
-.top-links a{
+
+.top-links a {
     padding: 5px;
     border: 2px ridge;
     border-radius: 5px;
@@ -54,16 +60,26 @@ header{
     margin: 4px;
     line-height: 2;
     user-select: none;
-    transition: 100ms;
+    transition: 125ms;
 }
-.top-links a:hover{
+
+.top-links a:hover {
     font-size: 26px;
-    border: 3px double;
 }
-.top-links a:link,:visited{
+
+.top-links a:active {
+    color: #cdd0d1;
+    font-size: 20px;
+    border-radius: 7px;
+    box-shadow: inset 0px 0px 25px black;
+}
+
+.top-links a:link,
+:visited {
     color: inherit;
 }
-section{
+
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,15 +88,17 @@ section{
     margin: 30px;
     gap: 30px;
 }
-article{
+
+article {
     width: 85%;
     height: 20%;
     background-color: #f6eee3;
-    border-radius: 20px;    
+    border-radius: 20px;
     box-shadow: 0px 10px 25px rgba(33, 33, 33, 0.4);
     padding-bottom: 30px;
 }
-article h1{
+
+article h2 {
     font-family: "Google Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
@@ -93,7 +111,8 @@ article h1{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-article h2{
+
+article h3 {
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
@@ -104,7 +123,8 @@ article h2{
     padding-left: 25px;
     margin-bottom: 10px;
 }
-article p{
+
+article p {
     font-family: "Google Sans Text", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
@@ -117,14 +137,16 @@ article p{
     margin-top: 1px;
     margin-bottom: 1px;
 }
-.box-table{
+
+.box-table {
     display: flex;
     justify-content: center;
 }
-table{
+
+table {
     font-family: monospace, sans-serif;
     font-size: 60px;
-    width: 60%;    
+    width: 60%;
     border-collapse: collapse;
     margin: 20px;
     font-size: 22px;
