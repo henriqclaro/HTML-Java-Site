@@ -197,14 +197,19 @@ aside li:hover {
     font-size: 23px;
 }
 
-@media (max-width: 1150px) {
+/*Responsividade*/
+@media (max-width: 1180px) {
     .content {
         flex-direction: column-reverse;
         align-items: center;
     }
 
+    article {
+        scroll-margin-top: 100px;
+    }
+
     aside {
-        position: relative;
+        top: 1%;
         min-width: 95%;
         padding-bottom: 0;
     }

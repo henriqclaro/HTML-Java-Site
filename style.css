@@ -191,6 +191,7 @@ aside img:active {
     scale: 0.99;
 }
 
+/*Responsividade*/
 @media (max-width: 1000px) {
     .content {
         flex-direction: row;
